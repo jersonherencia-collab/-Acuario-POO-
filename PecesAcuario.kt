@@ -1,12 +1,7 @@
-Kotlin
-package acuario
-
-// Implementación de clases abstractas
 abstract class Pez {
     abstract val color: String
 }
 
-// Implementación de Interfaces
 interface AccionPez {
     fun comer()
 }
@@ -28,10 +23,10 @@ class PezPayaso : Pez(), AccionPez {
 fun crearPeces() {
     val tiburon = Tiburon()
     val pezPayaso = PezPayaso()
-
+    
     println("Color del tiburón: ${tiburon.color}")
     tiburon.comer()
-
+    
     println("Color del pez payaso: ${pezPayaso.color}")
     pezPayaso.comer()
 }
